@@ -1,4 +1,4 @@
-function [eigenvalues, eigenvectors] = Q2a(K,M,max_iter,tol)
+function [eigenvalues, eigenvectors] = rayleight_quotient_iteration(K,M,max_iter,tol)
     
     % Transforming from general to standard eigenvealue problem form
     R = cholesky_tridiagonal(M);
