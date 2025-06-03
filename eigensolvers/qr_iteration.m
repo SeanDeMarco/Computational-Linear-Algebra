@@ -1,4 +1,4 @@
-function [eigenvalues, eigenvectors] = Q2b(K, M, max_iter, tol)
+function [eigenvalues, eigenvectors] = qr_iteration(K, M, max_iter, tol)
     
     % Transforming from general to standard eigenvalue problem form
     R = cholesky_tridiagonal(M);
