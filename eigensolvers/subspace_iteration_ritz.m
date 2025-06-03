@@ -1,4 +1,4 @@
-function [eigenvalues, eigenvectors] = Q2c(K, M, m, max_iter, tol)
+function [eigenvalues, eigenvectors] = subspace_iteration_ritz(K, M, m, max_iter, tol)
     
     n = size(K, 1);
     % Initialising random trial vectors of size n x m
